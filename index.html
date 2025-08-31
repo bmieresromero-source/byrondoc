@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acta de Entrega</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .sidebar {
+      height: 100vh;
+      background: #1f2937;
+      color: #fff;
+      padding: 20px;
+      position: fixed;
+    }
+    .sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #facc15;
+    }
+    .sidebar a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      margin: 8px 0;
+      padding: 8px;
+      border-radius: 8px;
+    }
+    .sidebar a:hover {
+      background: #374151;
+    }
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .card {
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .btn {
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>COILE S.A</h2>
+    <a href="index.html">Acta</a>
+    <a href="reporte_detalle.html">Reporte Detalle</a>
+    <a href="reporte_resumen.html">Reporte Resumen</a>
+    <a href="inventario.html">Inventario</a>
+    <a href="vendedores.html">Vendedores</a>
+  </div>
+
+  <div class="content">
+    <div class="d-flex align-items-center mb-4">
+      <img src="logo.webp" alt="Logo" style="height:50px;margin-right:15px;">
+      <h3>Acta de Entrega</h3>
+    </div>
+    
+        <div class="card p-4">
+          <h5>Formulario de Acta</h5>
+          <form>
+            <div class="row mb-3">
+              <div class="col">
+                <label>N° Acta</label>
+                <input type="text" class="form-control" value="ACTA-001" readonly>
+              </div>
+              <div class="col">
+                <label>Fecha</label>
+                <input type="date" class="form-control" value="2025-08-31" readonly>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label>Código Cliente</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label>Nombre Cliente</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label>Cédula/RUC</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label>Vendedor</label>
+              <select class="form-select">
+                <option>V001 - Juan Pérez</option>
+                <option>V002 - María López</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label>Producto</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label>Cantidad</label>
+              <input type="number" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label>Descripción</label>
+              <textarea class="form-control"></textarea>
+            </div>
+            <div class="d-flex justify-content-between">
+              <button type="button" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-success">Imprimir</button>
+            </div>
+          </form>
+        </div>
+        
+  </div>
+</body>
+</html>
